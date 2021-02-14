@@ -1,0 +1,88 @@
+/*
+first color: #212529 [dark gray]
+second color: #fed136 [yellow]
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 2000px;
+    background-color: #eee;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    padding-right: 0; 
+    padding-left: 0;
+}
+
+/****** start navbar *******/
+.navbar {
+    background-color: transparent;
+    padding: 1.5rem 3rem;
+}
+/*navbar colored bg appears when scroll down*/
+.navbar.scroll {
+    background-color: #212529;
+    transition: all 0.5s ease-out;
+    border-bottom: 2px solid #fed136;
+}
+.navbar img {
+    height: 70px;
+    margin-left: 15px;
+}
+.navbar-collapse {
+    flex-grow: inherit;
+}
+.navbar-toggler {
+    background-color: #fed136;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    cursor: pointer;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fed136;
+    border-bottom: 1px solid #fed136;
+}
+/*hover effect*/
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fed136;
+    border-bottom: 1px solid #fed136;
+    transition: all 0.6s ease-out;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 1rem;
+    }
+}
+/****** end navbar *******/
+
+/****** start header #fed136*******/
+.headerContainer {
+    background-color: #fed136;
+    background-image: linear-gradient(30deg, #fed136 50%, #212529  50%);
+}
+.header {
+    width: 90%;
+    height: 75vh;
+    background-image: url(./img/header-bg.jpg);
+    background-size: cover;
+    margin: 20px auto;
+}
+.headerText span {
+    color: #fed136;
+}
+.headerText p:first-child {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.headerText .mainTitle {
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+/****** end header *******/
+
