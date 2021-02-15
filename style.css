@@ -12,12 +12,15 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    height: 2000px;
+    
     background-color: #eee;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
     padding-right: 0; 
     padding-left: 0;
+}
+p {
+    font-size: x-large;
 }
 
 /****** start navbar *******/
@@ -88,18 +91,22 @@ body {
     font-weight: bolder;
     letter-spacing: 2px;
 }
+@media (max-width: 500px) {
+    .navbar img {
+        height: 60px;
+        margin-left: 0;
+    }
+    .headerText p:first-child {
+        font-size: 20px;
+        margin-top: 20%;
+    }
+    .headerText .mainTitle {
+        font-size: 35px;
+    }
+}
 /****** end header *******/
 
 /****** start about us section *******/
-#about {
-    position: relative;
-    height: 800px;
-}
-#about .container-fluid {
-    position: absolute;
-    top: 85px;
-}
-/****** end about us section *******/
 h1 {
     color: #fed136;
 }
@@ -135,3 +142,101 @@ h1::after {
 
 
 }
+/****** end about us section *******/
+
+/****** start team section *******/
+.team {
+    background-color: #fed136;
+    background-image: linear-gradient(30deg, #fed136 30%, #4e5255  20%, #212529 50%);
+}
+.teamImg {
+    width: 350px;
+    height: 500px;
+    
+}
+.borderRight {
+    border-right: 2px solid #fed136;
+}
+.teamExtention {
+    width: 100%;
+    height: 300px;
+    background-image: url('./img/image001.jpg');
+    background-color: #fed136;
+    background-blend-mode: darken;
+    background-size: cover;
+    position: relative;
+}
+.teamExtention::before {
+    content: '';
+    width: 100%;
+    height: 40px;
+    background-color: #fed136;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.teamScale {
+    width: 100%;
+    position: relative;
+}
+.teamScale::before {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.topTalent {
+    width: 100%;
+    position: relative;
+}
+.topTalent::before {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background-color: #354d71;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/****** end team section *******/
+
+/****** start services section *******/
+.serviceSecondPart {
+    background-color: #fed136;
+}
+/****** end services section *******/
+
+/****** start clients section *******/
+.clients {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('./img/austin-distel-jpHw8ndwJ_Q-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+.clients img {
+    width: 150px;
+    height: 120px;
+}
+/****** end clients section *******/
+
+/****** start contact section *******/
+.contact {
+    width: 100%;
+    background-image: url('./img/map-image.png');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 5px solid #fed136;
+}
+/****** end contact section *******/
+
+/****** start footer section *******/
+footer {
+    background-color: #fed136;
+    color: #212529;
+}
+/****** end footer section *******/
