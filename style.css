@@ -12,7 +12,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    
+    font-family: sans-serif;
     background-color: #eee;
 }
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
@@ -59,12 +59,6 @@ p {
     border-bottom: 1px solid #fed136;
     transition: all 0.6s ease-out;
 }
-
-@media (min-width: 992px) {
-.navbar-expand-lg .navbar-nav .nav-link {
-    margin-right: 1rem;
-    }
-}
 /****** end navbar *******/
 
 /****** start header #fed136*******/
@@ -110,7 +104,6 @@ h1::after {
     background: linear-gradient(to bottom, #212529 0%, #212529 50%, #FED136 100%);
 }
 .about p {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: oblique;
     margin: 10px;
 }
@@ -119,7 +112,7 @@ h1::after {
 /****** start team section *******/
 .team {
     background-color: #fed136;
-    background-image: linear-gradient(30deg, #fed136 30%, #4e5255  20%, #212529 50%);
+    background-image: linear-gradient(30deg, #e6cb6b 30%, #4e5255  20%, #212529 50%);
 }
 .teamImg {
     width: 350px;
@@ -135,7 +128,7 @@ h1::after {
     width: 100%;
     height: 300px;
     background-image: url('./img/image001.jpg');
-    background-color: #fed136;
+    background-color: #e6cb6b;
     background-blend-mode: darken;
     background-size: cover;
     position: relative;
@@ -144,7 +137,7 @@ h1::after {
     content: '';
     width: 100%;
     height: 40px;
-    background-color: #fed136;
+    background-color: #e6cb6b;
     position: absolute;
     top: 0;
     left: 0;
@@ -179,7 +172,7 @@ h1::after {
 
 /****** start services section *******/
 .serviceSecondPart {
-    background-color: #fed136;
+    background-color: #e6cb6b;
 }
 .textShadow {
     text-shadow: 1px 2px 6px #212529;
@@ -247,3 +240,18 @@ footer {
         
     }
 }
+@media (min-width: 768px) {
+    .headerText p:first-child {
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+    .headerText .mainTitle {
+        font-size: 36px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin-right: 1rem;
+        }
+    }
