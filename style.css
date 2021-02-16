@@ -242,6 +242,14 @@ footer {
         display: none;
     }
 }
+@media (max-width: 768px) {
+    .num {
+        display: none;
+    }
+    .navbar {
+        padding: 0rem 2.5rem;
+    }
+}
 @media (min-width: 768px) {
     .headerText p:first-child {
         font-size: 20px;
