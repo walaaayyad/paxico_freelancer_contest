@@ -91,19 +91,6 @@ p {
     font-weight: bolder;
     letter-spacing: 2px;
 }
-@media (max-width: 500px) {
-    .navbar img {
-        height: 60px;
-        margin-left: 0;
-    }
-    .headerText p:first-child {
-        font-size: 20px;
-        margin-top: 20%;
-    }
-    .headerText .mainTitle {
-        font-size: 35px;
-    }
-}
 /****** end header *******/
 
 /****** start about us section *******/
@@ -118,29 +105,14 @@ h1::after {
     width: 100px;
     margin: 30px auto;  
 }
-.aboutImg {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    
+.about {
+    background: #212529;
+    background: linear-gradient(to bottom, #212529 0%, #212529 50%, #FED136 100%);
 }
-.aboutImg::before {
-    content: '';
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-bottom: 7px solid #fed136;
-    border-top: 7px solid #fed136;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('./img/about/3.jpg');
-    background-size: cover;
-    background-blend-mode: darken;
-    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-
-
+.about p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    margin: 10px;
 }
 /****** end about us section *******/
 
@@ -152,6 +124,8 @@ h1::after {
 .teamImg {
     width: 350px;
     height: 500px;
+    border-top: 7px double #fed136;
+    border-right: 7px double #fed136;
     
 }
 .borderRight {
@@ -213,7 +187,7 @@ h1::after {
 .clients {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    background-image: url('./img/austin-distel-jpHw8ndwJ_Q-unsplash.jpg');
+    background-image: url('./img/clients/austin-distel-jpHw8ndwJ_Q-unsplash.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: darken;
@@ -240,3 +214,33 @@ footer {
     color: #212529;
 }
 /****** end footer section *******/
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 0;
+        padding-right: 1.5rem;
+        background-color: #212529;
+        transition: all 0.5s ease-out;
+        border-bottom: 2px solid #fed136;
+        z-index: 100;
+    }
+    .navbar img {
+        height: 60px;
+        margin-left: 0;
+    }
+    .headerText p:first-child {
+        font-size: 20px;
+        margin-top: 20%;
+    }
+    .headerText .mainTitle {
+        font-size: 35px;
+    }
+    .teamImg {
+        width: inherit;
+        height: inherit;
+        border-top: none;
+        border-right: none;
+        clip-path: polygon(52% 18%, 100% 8%, 100% 80%, 52% 90%, 0 81%, 0 8%);
+        
+    }
+}
