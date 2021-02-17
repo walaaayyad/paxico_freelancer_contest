@@ -242,7 +242,7 @@ footer {
         display: none;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .num {
         display: none;
     }
@@ -258,6 +258,12 @@ footer {
     }
     .headerText .mainTitle {
         font-size: 36px;
+    }
+    .num {
+        display: none;
+    }
+    .navbar {
+        padding: 0rem 2.5rem;
     }
 }
 @media (min-width: 992px) {
