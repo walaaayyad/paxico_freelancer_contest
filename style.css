@@ -23,7 +23,7 @@ p {
     font-size: x-large;
 }
 
-/****** start navbar *******/
+/***************************[ start navbar ]***************************/
 .navbar {
     background-color: transparent;
     padding: 1.5rem 3rem;
@@ -59,9 +59,9 @@ p {
     border-bottom: 1px solid #fed136;
     transition: all 0.6s ease-out;
 }
-/****** end navbar *******/
+/********************************* end navbar **********************************/
 
-/****** start header #fed136*******/
+/******************************[ start header ]**********************************/
 .headerContainer {
     background-color: #fed136;
     background-image: linear-gradient(30deg, #fed136 50%, #212529  50%);
@@ -76,18 +76,9 @@ p {
 .headerText span {
     color: #fed136;
 }
-.headerText p:first-child {
-    font-size: 30px;
-    letter-spacing: 2px;
-}
-.headerText .mainTitle {
-    font-size: 60px;
-    font-weight: bolder;
-    letter-spacing: 2px;
-}
-/****** end header *******/
+/********************************* end header **********************************/
 
-/****** start about us section *******/
+/***************************[ start about us section ]****************************/
 h1 {
     color: #fed136;
 }
@@ -104,12 +95,31 @@ h1::after {
     background: linear-gradient(to bottom, #212529 0%, #212529 50%, #FED136 100%);
 }
 .about p {
-    font-style: oblique;
     margin: 10px;
 }
-/****** end about us section *******/
+.topTalent {
+    background-color: #2e2c26;
+    border-top: 4px solid #fed136;
+    border-bottom: 4px solid #fed136;
+    margin: 10px auto;
+    padding-top: 10px;
+    color: #fff;
+}
+.topTalent h3 {
+    padding-bottom: 7px;
+    padding-top: 10px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.topTalent span {
+    color: #fed136;
+    font-size: 2rem;
+}
+/******************************** end about us section *********************************/
 
-/****** start team section *******/
+/*********************************[ start team section ]**********************************/
 .team {
     background-color: #fed136;
     background-image: linear-gradient(30deg, #e6cb6b 30%, #4e5255  20%, #212529 50%);
@@ -124,18 +134,18 @@ h1::after {
 .borderRight {
     border-right: 2px solid #fed136;
 }
-/****** end team section *******/
+/********************************* end team section **********************************/
 
-/****** Start How you scale your team Section *******/
+/***********************[ Start How you scale your team Section ]************************/
 .scaleTeam h3 {
     border-bottom: 1px solid #212529;
     padding-bottom: 15px;
 } 
-h5 {
+.scaleTeam h5 {
     background-color: #e6cb6b;
     padding: 5px;
 }
-h5 span {
+.scaleTeam h5 span {
     font-size: 30px;
     font-weight: bolder;
 }
@@ -159,23 +169,20 @@ h5 span {
     background-color: #eee;
     font-style: italic;
   }
-/****** End How you scale your team Section *******/
+/********************* End How you scale your team Section **********************/
 
-/****** start services section *******/
+/***************************[ start services section ]****************************/
 .serviceSecondPart {
     background-color: #e6cb6b;
-}
-.textShadow {
-    text-shadow: 1px 2px 6px #212529;
 }
 .service h1 {
     background-color: #2e2c26;
     border-top: 4px solid #fed136;
     border-bottom: 4px solid #fed136;
 }
-/****** end services section *******/
+/****************************** end services section *******************************/
 
-/****** start clients section *******/
+/******************************[ start clients section ]******************************/
 .clients {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -188,9 +195,9 @@ h5 span {
     width: 150px;
     height: 120px;
 }
-/****** end clients section *******/
+/****************************** end clients section *******************************/
 
-/****** start contact section *******/
+/******************************[ start contact section ]******************************/
 .contact {
     width: 100%;
     background-image: url('./img/map-image.png');
@@ -198,14 +205,14 @@ h5 span {
     background-color: rgba(0, 0, 0, 0.8);
     border-top: 5px solid #fed136;
 }
-/****** end contact section *******/
+/****************************** end contact section *******************************/
 
-/****** start footer section *******/
+/******************************[ start footer section ]******************************/
 footer {
     background-color: #fed136;
     color: #212529;
 }
-/****** end footer section *******/
+/****************************** end footer section *******************************/
 
 @media (max-width: 576px) {
     .navbar {
@@ -219,10 +226,6 @@ footer {
     .navbar img {
         height: 60px;
         margin-left: 0;
-    }
-    .headerText p:first-child {
-        font-size: 20px;
-        margin-top: 20%;
     }
     .headerText .mainTitle {
         font-size: 35px;
@@ -251,13 +254,10 @@ footer {
     }
 }
 @media (min-width: 768px) {
-    .headerText p:first-child {
-        font-size: 20px;
+    .headerText .mainTitle {
+        font-size: 30px;
         margin-bottom: 0;
         margin-top: 20px;
-    }
-    .headerText .mainTitle {
-        font-size: 36px;
     }
 }
 @media (min-width: 992px) {
