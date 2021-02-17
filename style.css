@@ -259,12 +259,6 @@ footer {
     .headerText .mainTitle {
         font-size: 36px;
     }
-    .num {
-        display: none;
-    }
-    .navbar {
-        padding: 0rem 2.5rem;
-    }
 }
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
